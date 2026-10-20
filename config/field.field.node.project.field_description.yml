@@ -1,0 +1,21 @@
+uuid: 307c1034-33e9-4e90-a169-25b57bfa35bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.project
+_core:
+  default_config_hash: QI7OQWpkNKSDAtb0bme13v9JY8wkXl0xJYmKsDoiyWQ
+id: node.project.field_description
+field_name: field_description
+entity_type: node
+bundle: project
+label: Description
+description: 'Describe the page content. This appears as the description in search engine results.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

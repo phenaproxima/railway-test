@@ -1,0 +1,1002 @@
+recipe: Haven
+config:
+  -
+    name: canvas.component.block.system_menu_block.secondary
+    data:
+      versioned_properties:
+        active:
+          settings:
+            default_settings:
+              label: 'Secondary navigation'
+      label: 'Secondary navigation'
+  -
+    name: canvas.component.block.system_menu_block.social
+    data:
+      versioned_properties:
+        active:
+          settings:
+            default_settings:
+              label: Social
+      label: Social
+  -
+    name: canvas.component.block.views_block.blog-all
+    data:
+      versioned_properties:
+        active:
+          settings:
+            default_settings:
+              label: 'Blog: All blog posts'
+      label: 'Blog: All blog posts'
+  -
+    name: canvas.component.block.views_block.blog-latest
+    data:
+      versioned_properties:
+        active:
+          settings:
+            default_settings:
+              label: 'Blog: Latest blog posts'
+      label: 'Blog: Latest blog posts'
+  -
+    name: canvas.component.block.views_block.blog-related
+    data:
+      versioned_properties:
+        active:
+          settings:
+            default_settings:
+              label: 'Blog: Related blog posts'
+      label: 'Blog: Related blog posts'
+  -
+    name: canvas.component.block.views_block.projects-all
+    data:
+      versioned_properties:
+        active:
+          settings:
+            default_settings:
+              label: 'Projects: All projects'
+      label: 'Projects: All projects'
+  -
+    name: canvas.component.block.views_block.projects-featured
+    data:
+      versioned_properties:
+        active:
+          settings:
+            default_settings:
+              label: 'Projects: Featured project'
+      label: 'Projects: Featured project'
+  -
+    name: canvas.component.block.views_block.projects-latest
+    data:
+      versioned_properties:
+        active:
+          settings:
+            default_settings:
+              label: 'Projects: Latest projects'
+      label: 'Projects: Latest projects'
+  -
+    name: canvas.component.block.views_block.projects-related
+    data:
+      versioned_properties:
+        active:
+          settings:
+            default_settings:
+              label: 'Projects: Related projects'
+      label: 'Projects: Related projects'
+  -
+    name: canvas.component.sdc.haven_theme.accordion-container
+    data:
+      versioned_properties:
+        active:
+          fallback_metadata:
+            slot_definitions:
+              accordion_content:
+                title: 'Accordion content'
+                description: 'Only one of collapsible sections added can be open at a time.'
+      label: 'Accordion container'
+  -
+    name: canvas.component.sdc.haven_theme.accordion
+    data:
+      versioned_properties:
+        active:
+          settings:
+            prop_field_definitions:
+              title:
+                default_value:
+                  -
+                    value: 'Section title'
+          fallback_metadata:
+            slot_definitions:
+              accordion_content:
+                title: 'Accordion content'
+                description: 'Content in this slot will be hidden when the accordion is collapsed.'
+        9ef1c4769558babd:
+          fallback_metadata:
+            slot_definitions:
+              accordion_content:
+                title: 'Accordion content'
+                description: 'Content in this slot will be hidden when the accordion is collapsed.'
+      label: Accordion
+  -
+    name: canvas.component.sdc.haven_theme.anchor
+    data:
+      versioned_properties:
+        active:
+          settings:
+            prop_field_definitions:
+              id:
+                default_value:
+                  -
+                    value: anchor-id
+      label: Anchor
+  -
+    name: canvas.component.sdc.haven_theme.badge
+    data:
+      versioned_properties:
+        active:
+          settings:
+            prop_field_definitions:
+              label:
+                default_value:
+                  -
+                    value: 'Badge text'
+              icon:
+                default_value:
+                  -
+                    value: rocket
+      label: Badge
+  -
+    name: canvas.component.sdc.haven_theme.blockquote
+    data:
+      versioned_properties:
+        active:
+          settings:
+            prop_field_definitions:
+              text:
+                default_value:
+                  -
+                    value: '“To confine our attention to terrestrial matters would be to limit the human spirit.”'
+              cite_name:
+                default_value:
+                  -
+                    value: 'Isiah Julio'
+              cite_text:
+                default_value:
+                  -
+                    value: 'Engineer, Technical Services'
+      label: Blockquote
+  -
+    name: canvas.component.sdc.haven_theme.button
+    data:
+      versioned_properties:
+        active:
+          settings:
+            prop_field_definitions:
+              label:
+                default_value:
+                  -
+                    value: 'Button label'
+      label: Button
+  -
+    name: canvas.component.sdc.haven_theme.card-feature
+    data:
+      versioned_properties:
+        active:
+          settings:
+            prop_field_definitions:
+              heading_text:
+                default_value:
+                  -
+                    value: 'This is your card title'
+              icon:
+                default_value:
+                  -
+                    value: arrow-circle-right
+      label: 'Feature card'
+  -
+    name: canvas.component.sdc.haven_theme.card-icon
+    data:
+      versioned_properties:
+        active:
+          settings:
+            prop_field_definitions:
+              icon:
+                default_value:
+                  -
+                    value: rocket
+              text:
+                default_value:
+                  -
+                    value: 'Your heading here'
+              description:
+                default_value:
+                  -
+                    value: '<p>This is placeholder text.</p>'
+      label: 'Icon card'
+  -
+    name: canvas.component.sdc.haven_theme.card-logo
+    data:
+      label: 'Logo card'
+  -
+    name: canvas.component.sdc.haven_theme.card-pricing
+    data:
+      versioned_properties:
+        active:
+          settings:
+            prop_field_definitions:
+              heading_text:
+                default_value:
+                  -
+                    value: Premium
+              description:
+                default_value:
+                  -
+                    value: 'Curabitur nascetur non potenti pede luctus vivamus'
+              price:
+                default_value:
+                  -
+                    value: '159'
+              currency_code:
+                default_value:
+                  -
+                    value: USD
+              currency_symbol:
+                default_value:
+                  -
+                    value: $
+              text:
+                default_value:
+                  -
+                    value: '<ul> <li>Example item 1</li> <li>Example item 2</li> </ul>'
+              button_label:
+                default_value:
+                  -
+                    value: 'Choose this plan'
+      label: 'Pricing card'
+  -
+    name: canvas.component.sdc.haven_theme.card-testimonial
+    data:
+      versioned_properties:
+        active:
+          settings:
+            prop_field_definitions:
+              text:
+                default_value:
+                  -
+                    value: "Every small action counts, from reducing waste to supporting sustainable practices. Let's unite for a greener tomorrow!"
+              cite_name:
+                default_value:
+                  -
+                    value: 'Isiah Julio'
+              cite_text:
+                default_value:
+                  -
+                    value: 'Climate policy advocate'
+      label: 'Testimonial card'
+  -
+    name: canvas.component.sdc.haven_theme.card
+    data:
+      versioned_properties:
+        active:
+          settings:
+            prop_field_definitions:
+              heading_text:
+                default_value:
+                  -
+                    value: 'This is your card title'
+              category:
+                default_value:
+                  -
+                    value: Category
+              icon:
+                default_value:
+                  -
+                    value: globe
+      label: 'Image card'
+  -
+    name: canvas.component.sdc.haven_theme.cta
+    data:
+      versioned_properties:
+        active:
+          settings:
+            prop_field_definitions:
+              heading_text:
+                default_value:
+                  -
+                    value: 'Your heading goes here'
+              text:
+                default_value:
+                  -
+                    value: 'Lorem ipsum dolor sit amet.'
+          fallback_metadata:
+            slot_definitions:
+              actions:
+                title: Buttons
+      label: 'Hero CTA'
+  -
+    name: canvas.component.sdc.haven_theme.footer
+    data:
+      versioned_properties:
+        active:
+          fallback_metadata:
+            slot_definitions:
+              footer_first:
+                title: 'Branding & Social'
+              footer_last:
+                title: 'Call to action'
+              footer_utility_first:
+                title: 'Utility links'
+              footer_utility_last:
+                title: 'Copyright text'
+      label: Footer
+  -
+    name: canvas.component.sdc.haven_theme.grid
+    data:
+      versioned_properties:
+        active:
+          fallback_metadata:
+            slot_definitions:
+              main_slot:
+                title: Grid
+        d3e0565623935449:
+          fallback_metadata:
+            slot_definitions:
+              main_slot:
+                title: Grid
+        09ca18ae841f60dc:
+          fallback_metadata:
+            slot_definitions:
+              main_slot:
+                title: Grid
+      label: Grid
+  -
+    name: canvas.component.sdc.haven_theme.group
+    data:
+      versioned_properties:
+        active:
+          fallback_metadata:
+            slot_definitions:
+              group_slot:
+                title: 'Group items'
+        7a3163ee5e2a1c66:
+          fallback_metadata:
+            slot_definitions:
+              group_slot:
+                title: 'Group items'
+        c8eef7810069b31e:
+          fallback_metadata:
+            slot_definitions:
+              group_slot:
+                title: 'Group items'
+        671b7e47d5b61c8b:
+          fallback_metadata:
+            slot_definitions:
+              group_slot:
+                title: 'Group items'
+      label: Group
+  -
+    name: canvas.component.sdc.haven_theme.heading
+    data:
+      versioned_properties:
+        active:
+          settings:
+            prop_field_definitions:
+              heading_text:
+                default_value:
+                  -
+                    value: 'Your heading goes here'
+      label: Heading
+  -
+    name: canvas.component.sdc.haven_theme.hero-billboard
+    data:
+      versioned_properties:
+        active:
+          fallback_metadata:
+            slot_definitions:
+              hero_slot:
+                title: 'Hero content'
+      label: 'Hero billboard'
+  -
+    name: canvas.component.sdc.haven_theme.hero-side-by-side
+    data:
+      versioned_properties:
+        active:
+          fallback_metadata:
+            slot_definitions:
+              hero_slot:
+                title: Content
+      label: 'Hero side-by-side'
+  -
+    name: canvas.component.sdc.haven_theme.icon
+    data:
+      versioned_properties:
+        active:
+          settings:
+            prop_field_definitions:
+              icon:
+                default_value:
+                  -
+                    value: rocket
+      label: Icon
+  -
+    name: canvas.component.sdc.haven_theme.image
+    data:
+      label: Image
+  -
+    name: canvas.component.sdc.haven_theme.navbar
+    data:
+      versioned_properties:
+        active:
+          fallback_metadata:
+            slot_definitions:
+              logo:
+                title: 'Site logo'
+              navigation:
+                title: 'Navigation menu'
+              links:
+                title: CTAs
+      label: Navbar
+  -
+    name: canvas.component.sdc.haven_theme.section
+    data:
+      versioned_properties:
+        active:
+          fallback_metadata:
+            slot_definitions:
+              header_slot:
+                title: Header
+              main_slot:
+                title: Grid
+              footer_slot:
+                title: Footer
+        c6eea4f08b0e0778:
+          fallback_metadata:
+            slot_definitions:
+              header_slot:
+                title: Header
+              main_slot:
+                title: Grid
+              footer_slot:
+                title: Footer
+        20a5f40bbe6b2b98:
+          fallback_metadata:
+            slot_definitions:
+              header_slot:
+                title: Header
+              main_slot:
+                title: Grid
+              footer_slot:
+                title: Footer
+        1d29db473f7e4961:
+          fallback_metadata:
+            slot_definitions:
+              header_slot:
+                title: Header
+              main_slot:
+                title: Grid
+              footer_slot:
+                title: Footer
+        45507f445d220afb:
+          fallback_metadata:
+            slot_definitions:
+              header_slot:
+                title: Header
+              main_slot:
+                title: Grid
+              footer_slot:
+                title: Footer
+        1d78de0c88d82f30:
+          fallback_metadata:
+            slot_definitions:
+              header_slot:
+                title: Header
+              main_slot:
+                title: Grid
+              footer_slot:
+                title: Footer
+      label: Section
+  -
+    name: canvas.component.sdc.haven_theme.text
+    data:
+      versioned_properties:
+        active:
+          settings:
+            prop_field_definitions:
+              text:
+                default_value:
+                  -
+                    value: '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique pretium pellentesque semper enim aliquam.</p>'
+      label: Text
+  -
+    name: canvas.component.sdc.haven_theme.video
+    data:
+      label: Video
+  -
+    name: canvas.component.theme_page_template.haven_theme
+    data:
+      versioned_properties:
+        active:
+          fallback_metadata:
+            slot_definitions:
+              content:
+                title: Content
+                description: 'The Content region.'
+              header:
+                title: Header
+                description: 'The Header region.'
+              footer:
+                title: Footer
+                description: 'The Footer region.'
+      label: 'Haven page template'
+  -
+    name: canvas.content_template.node.project.card
+    data:
+      component_tree:
+        -
+          inputs:
+            icon: arrow-circle-right
+  -
+    name: canvas.content_template.node.project.featured
+    data:
+      component_tree:
+        '0:hero_slot:0:group_slot:0':
+          inputs:
+            label: 'Featured project'
+        '0:hero_slot:3':
+          inputs:
+            label: 'Project details'
+  -
+    name: canvas.js_component.global_css
+    data:
+      name: 'Global CSS'
+      js:
+        original: |
+          const GlobalCss = () => {
+            return (<div></div>);
+          };
+          export default GlobalCss;
+        compiled: |
+          import { jsx as _jsx } from "react/jsx-runtime";
+          const GlobalCss = ()=>{
+              return /*#__PURE__*/ _jsx("div", {});
+          };
+          export default GlobalCss;
+  -
+    name: canvas.page_variant.theme_haven_theme
+    data:
+      label: 'Haven_theme theme'
+      component_tree:
+        3be3dae7-636a-4cdb-ba21-9d41855ea7ea:
+          inputs:
+            label: 'Site branding'
+        2defe899-f9f1-4973-b155-df567ecf5049:
+          inputs:
+            label: 'Secondary navigation'
+        f1ddcf96-eacd-4e76-aca3-59af94bc6471:
+          inputs:
+            label: Social
+        de72ac79-7c7a-487a-ac38-35ca5148e383:
+          inputs:
+            heading_text: 'Sign up for our newsletter'
+        d3846370-9e12-497c-8c98-124d76c47253:
+          inputs:
+            label: Webform
+        5fd2d897-75b1-4c03-8f08-488d96502598:
+          inputs:
+            label: Footer
+        dece13c2-31bf-460f-b6cb-9636fcb2ed67:
+          inputs:
+            label: Donate
+        05793f48-9171-44ed-9ecd-25a65f64991b:
+          inputs:
+            label: 'Site branding'
+        6be7bde4-c6e1-4e2f-88b1-9138c52c386a:
+          inputs:
+            label: 'Main navigation'
+  -
+    name: canvas.pattern.donationcallout
+    data:
+      label: 'Donation callout'
+      component_tree:
+        '0:main_slot:0:group_slot:0':
+          inputs:
+            heading_text: 'Join the fight against climate change'
+        '0:main_slot:0:group_slot:1':
+          inputs:
+            heading_text: 'Lorem ipsum dolor sit amet senectus malesuada maximus imperdiet. Lorem ipsum dolor sit amet senectus malesuada maximus imperdiet. '
+        '0:main_slot:1:group_slot:0':
+          inputs:
+            label: 'Donate now'
+        '0:main_slot:1:group_slot:1':
+          inputs:
+            label: 'Learn more'
+  -
+    name: core.base_field_override.node.person_profile.title
+    data:
+      label: Title
+  -
+    name: core.date_format.rss
+    data:
+      label: RSS
+      pattern: r
+  -
+    name: core.entity_form_display.node.blog.default
+    data:
+      third_party_settings:
+        field_group:
+          group_seo:
+            label: 'Search Engine Optimization (SEO) Information'
+  -
+    name: core.entity_form_display.node.person_profile.default
+    data:
+      third_party_settings:
+        field_group:
+          group_seo:
+            label: 'Search Engine Optimization (SEO) Information'
+  -
+    name: core.entity_form_display.node.project.default
+    data:
+      third_party_settings:
+        field_group:
+          group_seo:
+            label: 'Search Engine Optimization (SEO) Information'
+  -
+    name: core.entity_view_mode.node.featured
+    data:
+      label: Featured
+  -
+    name: field.field.node.blog.field_blog__byline
+    data:
+      label: Byline
+  -
+    name: field.field.node.blog.field_content
+    data:
+      label: Content
+      description: 'The content of this page.'
+  -
+    name: field.field.node.blog.field_description
+    data:
+      label: Description
+      description: 'Describe the page content. This appears as the description in search engine results.'
+  -
+    name: field.field.node.blog.field_featured_image
+    data:
+      label: 'Featured image'
+      description: 'Include an image. This appears as the image in search engine results.'
+  -
+    name: field.field.node.blog.field_seo_analysis
+    data:
+      label: 'SEO analysis'
+      description: 'Pick the main keyword this page is about.'
+  -
+    name: field.field.node.blog.field_seo_description
+    data:
+      label: 'SEO description'
+      description: 'Write a description for search engines and social media sites.'
+  -
+    name: field.field.node.blog.field_seo_image
+    data:
+      label: 'SEO image'
+      description: 'Upload an image to be used when the page is shared on social media sites.'
+  -
+    name: field.field.node.blog.field_seo_title
+    data:
+      label: 'SEO title'
+      description: 'Use this field to overwrite the default HTML page title for SEO.'
+  -
+    name: field.field.node.blog.field_tags
+    data:
+      label: Tags
+      description: 'Include tags for relevant topics.'
+  -
+    name: field.field.node.person_profile.field_badge
+    data:
+      label: Badge
+  -
+    name: field.field.node.person_profile.field_callout_content
+    data:
+      label: 'Callout content'
+  -
+    name: field.field.node.person_profile.field_callout_heading
+    data:
+      label: 'Callout heading'
+  -
+    name: field.field.node.person_profile.field_content
+    data:
+      label: Content
+      description: 'The content of this page.'
+  -
+    name: field.field.node.person_profile.field_featured_image
+    data:
+      label: 'Featured image'
+      description: 'Include an image. This appears as the image in search engine results.'
+  -
+    name: field.field.node.person_profile.field_role
+    data:
+      label: Role
+  -
+    name: field.field.node.person_profile.field_seo_analysis
+    data:
+      label: 'SEO analysis'
+      description: 'Pick the main keyword this page is about.'
+  -
+    name: field.field.node.person_profile.field_seo_description
+    data:
+      label: 'SEO description'
+      description: 'Write a description for search engines and social media sites.'
+  -
+    name: field.field.node.person_profile.field_seo_image
+    data:
+      label: 'SEO image'
+      description: 'Upload an image to be used when the page is shared on social media sites.'
+  -
+    name: field.field.node.person_profile.field_seo_title
+    data:
+      label: 'SEO title'
+      description: 'Use this field to overwrite the default HTML page title for SEO.'
+  -
+    name: field.field.node.person_profile.field_sidebar
+    data:
+      label: Sidebar
+  -
+    name: field.field.node.project.field_content
+    data:
+      label: Content
+      description: 'The content of this page.'
+  -
+    name: field.field.node.project.field_description
+    data:
+      label: Description
+      description: 'Describe the page content. This appears as the description in search engine results.'
+  -
+    name: field.field.node.project.field_featured
+    data:
+      label: Featured
+      description: 'Select this to display this project as the featured item on project pages. If multiple items are selected, the most recently created item will appear.'
+      settings:
+        on_label: 'On'
+        off_label: 'Off'
+  -
+    name: field.field.node.project.field_featured_image
+    data:
+      label: 'Featured image'
+      description: 'Include an image. This appears as the image in search engine results.'
+  -
+    name: field.field.node.project.field_introduction
+    data:
+      label: Introduction
+  -
+    name: field.field.node.project.field_seo_analysis
+    data:
+      label: 'SEO analysis'
+      description: 'Pick the main keyword this page is about.'
+  -
+    name: field.field.node.project.field_seo_description
+    data:
+      label: 'SEO description'
+      description: 'Write a description for search engines and social media sites.'
+  -
+    name: field.field.node.project.field_seo_image
+    data:
+      label: 'SEO image'
+      description: 'Upload an image to be used when the page is shared on social media sites.'
+  -
+    name: field.field.node.project.field_seo_title
+    data:
+      label: 'SEO title'
+      description: 'Use this field to overwrite the default HTML page title for SEO.'
+  -
+    name: field.field.node.project.field_tags
+    data:
+      label: Tags
+      description: 'Include tags for relevant topics.'
+  -
+    name: field.field.node.project.field_thumbnail
+    data:
+      label: Thumbnail
+  -
+    name: node.type.blog
+    data:
+      name: 'Blog post'
+  -
+    name: node.type.person_profile
+    data:
+      name: 'Person profile'
+  -
+    name: node.type.project
+    data:
+      name: Project
+  -
+    name: pathauto.pattern.blog_content
+    data:
+      label: 'Blog content'
+      pattern: '/blog/[node:created:html_month]/[node:title]'
+  -
+    name: pathauto.pattern.project_content
+    data:
+      label: 'Project content'
+      pattern: '/projects/[node:created:html_month]/[node:title]'
+  -
+    name: system.menu.secondary
+    data:
+      label: 'Secondary navigation'
+      description: 'Site section links for content outside the main navigation'
+  -
+    name: system.menu.social
+    data:
+      label: Social
+      description: 'Social media links'
+  -
+    name: views.view.blog
+    data:
+      label: Blog
+      display:
+        default:
+          display_title: Default
+          display_options:
+            title: Blog
+            fields:
+              title:
+                separator: ', '
+            pager:
+              options:
+                tags:
+                  next: ››
+                  previous: ‹‹
+                  first: '« First'
+                  last: 'Last »'
+                expose:
+                  items_per_page_label: 'Items per page'
+                  items_per_page_options_all_label: '- All -'
+                  offset_label: Offset
+            exposed_form:
+              options:
+                submit_button: Apply
+                reset_button_label: Reset
+                exposed_sorts_label: 'Sort by'
+                sort_asc_label: Asc
+                sort_desc_label: Desc
+            empty:
+              area:
+                content:
+                  value: '<p>There are no blog posts yet.</p>'
+        all:
+          display_title: 'All blog posts'
+          display_options:
+            pager:
+              options:
+                tags:
+                  next: ››
+                  previous: ‹‹
+                expose:
+                  items_per_page_label: 'Items per page'
+                  items_per_page_options_all_label: '- All -'
+                  offset_label: Offset
+                views_infinite_scroll:
+                  button_text: 'Load More'
+        latest:
+          display_title: 'Latest blog posts'
+          display_options:
+            title: 'Latest blog posts'
+        related:
+          display_title: 'Related blog posts'
+          display_options:
+            title: 'Related blog posts'
+            arguments:
+              field_tags_target_id:
+                exception:
+                  title: All
+              nid:
+                exception:
+                  title: All
+        rss:
+          display_title: 'RSS Feed'
+          display_options:
+            fields:
+              title:
+                separator: ', '
+              field_description:
+                separator: ', '
+              view_node:
+                text: view
+              uuid:
+                separator: ', '
+              uid:
+                separator: ', '
+              created:
+                separator: ', '
+            style:
+              options:
+                description: 'Subscribe to our RSS feed to stay up to date with our latest blog posts.'
+  -
+    name: views.view.projects
+    data:
+      label: Projects
+      display:
+        default:
+          display_title: Default
+          display_options:
+            title: Projects
+            fields:
+              title:
+                separator: ', '
+            exposed_form:
+              options:
+                submit_button: Apply
+                reset_button_label: Reset
+                exposed_sorts_label: 'Sort by'
+                sort_asc_label: Asc
+                sort_desc_label: Desc
+            empty:
+              area:
+                content:
+                  value: '<p>There are no projects posts yet.</p>'
+        all:
+          display_title: 'All projects'
+          display_options:
+            pager:
+              options:
+                tags:
+                  next: 'Next ›'
+                  previous: '‹ Previous'
+                expose:
+                  items_per_page_label: 'Items per page'
+                  items_per_page_options_all_label: '- All -'
+                  offset_label: Offset
+                views_infinite_scroll:
+                  button_text: 'Load More'
+        featured:
+          display_title: 'Featured project'
+          display_options:
+            title: 'Featured project'
+        latest:
+          display_title: 'Latest projects'
+          display_options:
+            title: 'Latest blog posts'
+        related:
+          display_title: 'Related projects'
+          display_options:
+            title: 'Related blog posts'
+            arguments:
+              field_tags_target_id:
+                exception:
+                  title: All
+              nid:
+                exception:
+                  title: All
+        rss:
+          display_title: 'RSS Feed'
+          display_options:
+            fields:
+              title:
+                separator: ', '
+              field_description:
+                separator: ', '
+              view_node:
+                text: view
+              uuid:
+                separator: ', '
+              uid:
+                separator: ', '
+              created:
+                separator: ', '
+            style:
+              options:
+                description: 'Subscribe to our RSS feed to stay up to date with our latest blog posts.'
+  -
+    name: webform.webform.newsletter_signup
+    data:
+      title: 'Newsletter Signup'
+      description: '<p>A form to collect email addresses for newsletter subscriptions.</p>'
+      elements: |-
+        email:
+          '#type': email
+          '#title': Email
+          '#title_display': invisible
+          '#placeholder': Email
+          '#required': true
+        actions:
+          '#type': webform_actions
+          '#title': 'Submit button(s)'
+          '#submit__label': Subscribe
+      settings:
+        confirmation_title: Thanks
+        confirmation_message: '<p>Nice to have you on board. Keep an eye on your inbox for our latest insights!</p>'

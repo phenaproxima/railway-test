@@ -1,0 +1,17 @@
+uuid: be2781aa-7638-4aa9-9dba-a30909243234
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.marker.page_content
+    - canvas.component.sdc.navigation.message
+    - canvas.component.sdc.navigation.title
+    - canvas.component.theme_page_template.haven_theme
+name: Other
+configEntityTypeId: component
+weight: 0
+items:
+  - marker.page_content
+  - sdc.navigation.message
+  - sdc.navigation.title
+  - theme_page_template.haven_theme

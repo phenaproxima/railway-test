@@ -1,0 +1,27 @@
+uuid: a5133176-6937-4bbc-a232-6ec0813092ff
+langcode: en
+status: false
+dependencies:
+  module:
+    - project_browser
+active_version: 012b6eabb836cc07
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'project_browser_block:recommended'
+        label: 'Recommended add-ons'
+        label_display: '0'
+        provider: project_browser
+        paginate: true
+        page_sizes: '12, 24, 36, 48'
+        sort_options: null
+        default_sort: null
+        filters: null
+    fallback_metadata:
+      slot_definitions: null
+label: 'Recommended add-ons'
+id: block.project_browser_block.recommended
+provider: project_browser
+source: block
+source_local_id: 'project_browser_block:recommended'

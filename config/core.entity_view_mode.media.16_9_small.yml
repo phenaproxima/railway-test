@@ -1,0 +1,13 @@
+uuid: e5e29cce-2ba9-4d45-a4f0-80104fe5570c
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: n89IaKyrrPz_WBFJghe1r64AV1-0xNM20L8k_y1H8vs
+id: media.16_9_small
+label: '16:9 Small'
+description: ''
+targetEntityType: media
+cache: true

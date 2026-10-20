@@ -1,0 +1,39 @@
+uuid: f7545a5e-e265-40e7-b428-e6f560a7d2ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.projects
+  module:
+    - views
+_core:
+  default_config_hash: uF-DrTQ_FUdzTb10ECCe4u4sO96A85dhliW9HzLPf_Y
+active_version: 017d5c21871ebb3b
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'views_block:projects-latest'
+        label: 'Projects: Latest projects'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+    fallback_metadata:
+      slot_definitions: null
+  cf97a255fbf8922a:
+    settings:
+      default_settings:
+        id: 'views_block:projects-latest'
+        label: 'Projects: Latest projects'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+    fallback_metadata:
+      slot_definitions: null
+label: 'Projects: Latest projects'
+id: block.views_block.projects-latest
+provider: views
+source: block
+source_local_id: 'views_block:projects-latest'

@@ -1,0 +1,32 @@
+recipe: Forms
+config:
+  -
+    name: webform.webform.contact_form
+    data:
+      title: Contact
+      description: '<p>A basic site-wide contact form for your website. Submissions are stored as well as emailed to the site administrator.</p>'
+      elements: |-
+        name:
+          '#type': textfield
+          '#title': Name
+          '#required': true
+        email:
+          '#type': email
+          '#title': Email
+          '#required': true
+        message:
+          '#type': textarea
+          '#title': Message
+          '#required': true
+        captcha:
+          '#type': captcha
+      settings:
+        confirmation_title: 'Thank you'
+        confirmation_message: '<h2>Thanks for contacting us!</h2><p>We have received your message and will get back to you soon.</p>'
+      handlers:
+        email:
+          label: Email
+          settings:
+            from_name: _default
+            subject: _default
+            body: _default

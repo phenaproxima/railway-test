@@ -1,0 +1,26 @@
+uuid: 557dd576-1689-4bb9-a0b8-f6d4808f7a5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sidebar
+    - filter.format.content_format
+    - node.type.person_profile
+  module:
+    - text
+_core:
+  default_config_hash: ZQpzGjbmxldN8TadslAYK_He_GRoUCnAiQNrCpm_cd0
+id: node.person_profile.field_sidebar
+field_name: field_sidebar
+entity_type: node
+bundle: person_profile
+label: Sidebar
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - content_format
+field_type: text_long

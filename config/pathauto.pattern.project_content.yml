@@ -1,0 +1,28 @@
+uuid: 648310fd-637d-438f-8e69-e3668405b7af
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.project
+  module:
+    - node
+  enforced:
+    config:
+      - node.type.project
+_core:
+  default_config_hash: ECA7V6nxAF9EzjToBWjGDY2S_iPfi2UzUkKu70pBXDc
+id: project_content
+label: 'Project content'
+type: 'canonical_entities:node'
+pattern: '/projects/[node:created:html_month]/[node:title]'
+selection_criteria:
+  29948b96-c963-4701-a572-c8570e9bca9a:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      project: project
+selection_logic: and
+weight: -5
+relationships: {  }

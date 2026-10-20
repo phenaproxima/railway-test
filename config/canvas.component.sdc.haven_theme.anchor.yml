@@ -1,0 +1,32 @@
+uuid: bdcada4f-d34d-4893-a2ea-7377f238b111
+langcode: en
+status: true
+dependencies:
+  theme:
+    - haven_theme
+_core:
+  default_config_hash: boyRF6DwAhATTJEw_CfSz6Vnvi1HnTUL9-HRWEL2zdI
+active_version: '5524813695409257'
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        id:
+          required: true
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: anchor-id
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {  }
+    fallback_metadata:
+      slot_definitions: {  }
+label: Anchor
+id: sdc.haven_theme.anchor
+provider: haven_theme
+source: sdc
+source_local_id: 'haven_theme:anchor'

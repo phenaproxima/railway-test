@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 313463f1-505e-40c1-8064-eeee025877bb
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: ivan-wong-zKYIAehZ1lQ-unsplash.avif
+  uri:
+    -
+      value: 'public://2026-03/ivan-wong-zKYIAehZ1lQ-unsplash.avif'
+  filemime:
+    -
+      value: image/avif
+  filesize:
+    -
+      value: 1542729
+  status:
+    -
+      value: true

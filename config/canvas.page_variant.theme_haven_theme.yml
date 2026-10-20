@@ -1,0 +1,207 @@
+uuid: 4e0c4aab-f603-41ef-a07f-d12cce29a207
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.block.system_branding_block
+    - canvas.component.block.system_menu_block.footer
+    - canvas.component.block.system_menu_block.main
+    - canvas.component.block.system_menu_block.secondary
+    - canvas.component.block.system_menu_block.social
+    - canvas.component.block.webform_block
+    - canvas.component.marker.page_content
+    - canvas.component.sdc.haven_theme.button
+    - canvas.component.sdc.haven_theme.footer
+    - canvas.component.sdc.haven_theme.group
+    - canvas.component.sdc.haven_theme.heading
+    - canvas.component.sdc.haven_theme.navbar
+    - canvas.component.sdc.haven_theme.text
+    - canvas.component.theme_page_template.haven_theme
+    - filter.format.canvas_html_block
+  module:
+    - options
+    - text
+_core:
+  default_config_hash: lEF-YMSChHyBVl0ICh_eRV5GLzgp2ENa9Wqsea7ftXc
+id: theme_haven_theme
+label: 'Haven_theme theme'
+description: null
+component_tree:
+  6242ad83-4e63-41d5-9217-c7f0e1b96643:
+    uuid: 6242ad83-4e63-41d5-9217-c7f0e1b96643
+    component_id: theme_page_template.haven_theme
+    component_version: 15fe1e06320b1035
+    inputs: {  }
+  fef03d8d-519e-4010-8eb6-70becabd26fb:
+    parent_uuid: 6242ad83-4e63-41d5-9217-c7f0e1b96643
+    slot: content
+    uuid: fef03d8d-519e-4010-8eb6-70becabd26fb
+    component_id: marker.page_content
+    component_version: 3b12c0b99a6caecc
+    inputs: {  }
+  03f9a527-f09e-4b82-bf98-2cbf1b3d5a47:
+    parent_uuid: 6242ad83-4e63-41d5-9217-c7f0e1b96643
+    slot: footer
+    uuid: 03f9a527-f09e-4b82-bf98-2cbf1b3d5a47
+    component_id: sdc.haven_theme.footer
+    component_version: d696cea1796b650e
+    inputs:
+      align: true
+  3be3dae7-636a-4cdb-ba21-9d41855ea7ea:
+    parent_uuid: 03f9a527-f09e-4b82-bf98-2cbf1b3d5a47
+    slot: footer_first
+    uuid: 3be3dae7-636a-4cdb-ba21-9d41855ea7ea
+    component_id: block.system_branding_block
+    component_version: 7d528e00f56b3abf
+    inputs:
+      label: 'Site branding'
+      label_display: '0'
+      use_site_logo: true
+      use_site_name: false
+      use_site_slogan: false
+  2defe899-f9f1-4973-b155-df567ecf5049:
+    parent_uuid: 03f9a527-f09e-4b82-bf98-2cbf1b3d5a47
+    slot: footer_first
+    uuid: 2defe899-f9f1-4973-b155-df567ecf5049
+    component_id: block.system_menu_block.secondary
+    component_version: 2f5ebe22feed1255
+    inputs:
+      label: 'Secondary navigation'
+      label_display: '0'
+      level: 1
+      depth: null
+      expand_all_items: false
+  f1ddcf96-eacd-4e76-aca3-59af94bc6471:
+    parent_uuid: 03f9a527-f09e-4b82-bf98-2cbf1b3d5a47
+    slot: footer_first
+    uuid: f1ddcf96-eacd-4e76-aca3-59af94bc6471
+    component_id: block.system_menu_block.social
+    component_version: 61f1f0168c94b6b6
+    inputs:
+      label: Social
+      label_display: '0'
+      level: 1
+      depth: null
+      expand_all_items: false
+  5cc54bbe-edf7-4145-a559-c00be60db83d:
+    parent_uuid: 03f9a527-f09e-4b82-bf98-2cbf1b3d5a47
+    slot: footer_last
+    uuid: 5cc54bbe-edf7-4145-a559-c00be60db83d
+    component_id: sdc.haven_theme.group
+    component_version: 7a3163ee5e2a1c66
+    inputs:
+      flex_direction: column
+      flex_gap: md
+      items_align: start
+      flex_align: center
+      radius: sm
+  de72ac79-7c7a-487a-ac38-35ca5148e383:
+    parent_uuid: 5cc54bbe-edf7-4145-a559-c00be60db83d
+    slot: group_slot
+    uuid: de72ac79-7c7a-487a-ac38-35ca5148e383
+    component_id: sdc.haven_theme.heading
+    component_version: f463a8803de8d3f1
+    inputs:
+      heading_text: 'Sign up for our newsletter'
+      level: 2
+      text_size: heading-responsive-3xl
+      text_color: inverted
+      align: left
+  2b0ec5ca-36b3-4173-ba40-5eb1c6ba5cae:
+    parent_uuid: 5cc54bbe-edf7-4145-a559-c00be60db83d
+    slot: group_slot
+    uuid: 2b0ec5ca-36b3-4173-ba40-5eb1c6ba5cae
+    component_id: sdc.haven_theme.text
+    component_version: 75c8d6e04ca4b729
+    inputs:
+      text:
+        value: '<p>Be the first to know about our latest updates, exclusive offers, and more.</p>'
+        format: canvas_html_block
+      text_size: text-sm
+      text_color: inverted
+      columns: '1 column'
+  d3846370-9e12-497c-8c98-124d76c47253:
+    parent_uuid: 5cc54bbe-edf7-4145-a559-c00be60db83d
+    slot: group_slot
+    uuid: d3846370-9e12-497c-8c98-124d76c47253
+    component_id: block.webform_block
+    component_version: b5dca6ca0519bf1b
+    inputs:
+      label: Webform
+      label_display: '0'
+      webform_id: newsletter_signup
+      default_data: ''
+      redirect: false
+      lazy: false
+  5fd2d897-75b1-4c03-8f08-488d96502598:
+    parent_uuid: 03f9a527-f09e-4b82-bf98-2cbf1b3d5a47
+    slot: footer_utility_first
+    uuid: 5fd2d897-75b1-4c03-8f08-488d96502598
+    component_id: block.system_menu_block.footer
+    component_version: 075503dbc228a45c
+    inputs:
+      label: Footer
+      label_display: '0'
+      level: 1
+      depth: null
+      expand_all_items: false
+  4ae56236-6800-4d68-8848-1a2ce922a836:
+    parent_uuid: 03f9a527-f09e-4b82-bf98-2cbf1b3d5a47
+    slot: footer_utility_last
+    uuid: 4ae56236-6800-4d68-8848-1a2ce922a836
+    component_id: sdc.haven_theme.text
+    component_version: 75c8d6e04ca4b729
+    inputs:
+      text:
+        value: '<p>© Copyright 2026</p>'
+        format: canvas_html_block
+      text_size: text-xs
+      text_color: inverted
+      columns: '1 column'
+  2842f0a3-0215-4084-9598-4efdc2f8bb41:
+    parent_uuid: 6242ad83-4e63-41d5-9217-c7f0e1b96643
+    slot: header
+    uuid: 2842f0a3-0215-4084-9598-4efdc2f8bb41
+    component_id: sdc.haven_theme.navbar
+    component_version: 3149f199d66bbc29
+    inputs:
+      menu_align: left
+  dece13c2-31bf-460f-b6cb-9636fcb2ed67:
+    parent_uuid: 2842f0a3-0215-4084-9598-4efdc2f8bb41
+    slot: links
+    uuid: dece13c2-31bf-460f-b6cb-9636fcb2ed67
+    component_id: sdc.haven_theme.button
+    component_version: 0e9e84d691ccddc4
+    inputs:
+      variant: accent
+      outlined: false
+      label: Donate
+      size: medium
+      icon: arrow-right
+      icon_first: false
+      mobile_width: false
+      disabled: false
+  05793f48-9171-44ed-9ecd-25a65f64991b:
+    parent_uuid: 2842f0a3-0215-4084-9598-4efdc2f8bb41
+    slot: logo
+    uuid: 05793f48-9171-44ed-9ecd-25a65f64991b
+    component_id: block.system_branding_block
+    component_version: 7d528e00f56b3abf
+    inputs:
+      label: 'Site branding'
+      label_display: '0'
+      use_site_logo: true
+      use_site_name: false
+      use_site_slogan: false
+  6be7bde4-c6e1-4e2f-88b1-9138c52c386a:
+    parent_uuid: 2842f0a3-0215-4084-9598-4efdc2f8bb41
+    slot: navigation
+    uuid: 6be7bde4-c6e1-4e2f-88b1-9138c52c386a
+    component_id: block.system_menu_block.main
+    component_version: 322535c0078cf59c
+    inputs:
+      label: 'Main navigation'
+      label_display: '0'
+      level: 1
+      depth: null
+      expand_all_items: false

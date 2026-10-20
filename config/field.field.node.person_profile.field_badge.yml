@@ -1,0 +1,21 @@
+uuid: 7c309ed7-f919-454a-b07f-abb7b1f564ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_badge
+    - node.type.person_profile
+_core:
+  default_config_hash: zHWm3931Oa2WPUz3jg79l7VnkZews0X5hyUalJS8Qfs
+id: node.person_profile.field_badge
+field_name: field_badge
+entity_type: node
+bundle: person_profile
+label: Badge
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

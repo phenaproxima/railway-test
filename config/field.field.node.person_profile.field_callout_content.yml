@@ -1,0 +1,26 @@
+uuid: 4f539b69-1183-4af3-af39-0c341c7ec606
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_callout_content
+    - filter.format.content_format
+    - node.type.person_profile
+  module:
+    - text
+_core:
+  default_config_hash: zh-Y1qwvzDkrj4nxbQJ-MypShrLPeTRxg0wErWcymXk
+id: node.person_profile.field_callout_content
+field_name: field_callout_content
+entity_type: node
+bundle: person_profile
+label: 'Callout content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - content_format
+field_type: text_long

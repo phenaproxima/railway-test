@@ -1,0 +1,23 @@
+uuid: f2669a51-eeb7-4a7f-a6e5-e781bd791f2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.haven_theme.accordion
+    - canvas.component.sdc.haven_theme.accordion-container
+    - canvas.component.sdc.haven_theme.footer
+    - canvas.component.sdc.haven_theme.grid
+    - canvas.component.sdc.haven_theme.group
+    - canvas.component.sdc.haven_theme.navbar
+    - canvas.component.sdc.haven_theme.section
+name: Layout
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.haven_theme.accordion
+  - sdc.haven_theme.accordion-container
+  - sdc.haven_theme.footer
+  - sdc.haven_theme.grid
+  - sdc.haven_theme.group
+  - sdc.haven_theme.navbar
+  - sdc.haven_theme.section

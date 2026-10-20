@@ -1,0 +1,34 @@
+uuid: 7bbb0353-91f2-43d4-b00f-37a639420a35
+langcode: en
+status: true
+dependencies:
+  module:
+    - canvas_page_template_component
+_core:
+  default_config_hash: CSVjqtZ8DbkbPynRH2eOksu8x2XvzElUmcd2PS5h65s
+active_version: 15fe1e06320b1035
+versioned_properties:
+  active:
+    settings: {  }
+    fallback_metadata:
+      slot_definitions:
+        content:
+          title: Content
+          description: 'The Content region.'
+          examples:
+            - ''
+        header:
+          title: Header
+          description: 'The Header region.'
+          examples:
+            - ''
+        footer:
+          title: Footer
+          description: 'The Footer region.'
+          examples:
+            - ''
+label: 'Haven page template'
+id: theme_page_template.haven_theme
+provider: canvas_page_template_component
+source: theme_page_template
+source_local_id: haven_theme
