@@ -1,0 +1,39 @@
+uuid: f5bcc7c1-4b6a-4d84-95ac-f54db1838494
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.blog
+  module:
+    - views
+_core:
+  default_config_hash: _KuTR5JTxKuVK03Dhz1JNv3BHSfFjEGbwzh85Kgk8eE
+active_version: f11baa2e2e8838bc
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'views_block:blog-all'
+        label: 'Blog: All blog posts'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+    fallback_metadata:
+      slot_definitions: null
+  9c0e5a7be68b5628:
+    settings:
+      default_settings:
+        id: 'views_block:blog-all'
+        label: 'Blog: All blog posts'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+    fallback_metadata:
+      slot_definitions: null
+label: 'Blog: All blog posts'
+id: block.views_block.blog-all
+provider: views
+source: block
+source_local_id: 'views_block:blog-all'

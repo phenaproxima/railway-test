@@ -1,0 +1,15 @@
+uuid: 01fe9ac9-7ea7-4d4b-887f-8535f6b56bc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.haven_theme.cta
+    - canvas.component.sdc.haven_theme.hero-billboard
+    - canvas.component.sdc.haven_theme.hero-side-by-side
+name: Hero
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.haven_theme.cta
+  - sdc.haven_theme.hero-billboard
+  - sdc.haven_theme.hero-side-by-side

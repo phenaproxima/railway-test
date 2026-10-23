@@ -1,0 +1,26 @@
+uuid: 00c1defd-ccbc-43ef-9a9a-4fa941af72b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - filter.format.content_format
+    - node.type.person_profile
+  module:
+    - text
+_core:
+  default_config_hash: hFYNF8__2bzZRnpw0_bDxj4xl4oPdCcE8Jv1PXZval0
+id: node.person_profile.field_content
+field_name: field_content
+entity_type: node
+bundle: person_profile
+label: Content
+description: 'The content of this page.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - content_format
+field_type: text_long

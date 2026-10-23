@@ -1,0 +1,27 @@
+uuid: 4e6e0d52-29d2-4e24-a4f7-716aca7ce4b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.haven_theme.anchor
+    - canvas.component.sdc.haven_theme.badge
+    - canvas.component.sdc.haven_theme.blockquote
+    - canvas.component.sdc.haven_theme.button
+    - canvas.component.sdc.haven_theme.heading
+    - canvas.component.sdc.haven_theme.icon
+    - canvas.component.sdc.haven_theme.image
+    - canvas.component.sdc.haven_theme.text
+    - canvas.component.sdc.haven_theme.video
+name: Base
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.haven_theme.anchor
+  - sdc.haven_theme.badge
+  - sdc.haven_theme.blockquote
+  - sdc.haven_theme.button
+  - sdc.haven_theme.heading
+  - sdc.haven_theme.icon
+  - sdc.haven_theme.image
+  - sdc.haven_theme.text
+  - sdc.haven_theme.video

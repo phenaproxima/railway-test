@@ -1,0 +1,23 @@
+uuid: e060d7b1-55bb-434f-a962-91cce6e1f287
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_featured
+    - node.type.project
+_core:
+  default_config_hash: 5KvGCtgL2ZH6Xwnt5JDO3gP-wlOYGdX0MhzJ9_koJ14
+id: node.project.field_featured
+field_name: field_featured
+entity_type: node
+bundle: project
+label: Featured
+description: 'Select this to display this project as the featured item on project pages. If multiple items are selected, the most recently created item will appear.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

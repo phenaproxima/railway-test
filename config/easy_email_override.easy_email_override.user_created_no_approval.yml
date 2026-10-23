@@ -1,0 +1,25 @@
+uuid: 910c85a8-590a-4d08-9b33-574622497e5e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1vUqjh87cx6OlhuqMNgqc1liDQgFJs8eMcnRh8ggh7c
+id: user_created_no_approval
+label: 'User: Created - No Approval Required'
+module: user
+key: register_no_approval_required
+easy_email_type: user_created_no_approval
+param_map:
+  -
+    source: account
+    destination: recipient_uid
+copied_fields:
+  from: false
+  reply_to: false
+  to: false
+  cc: false
+  bcc: false
+  subject: false
+  body_html: false
+  body_plain: false
+  attachments: false

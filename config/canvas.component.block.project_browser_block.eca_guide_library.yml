@@ -1,0 +1,27 @@
+uuid: c6c604eb-2533-4c06-9d13-f43a897af23e
+langcode: en
+status: false
+dependencies:
+  module:
+    - project_browser
+active_version: 8cc7fff9b2fd6c50
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'project_browser_block:eca_guide_library'
+        label: 'ECA Guide Library'
+        label_display: '0'
+        provider: project_browser
+        paginate: true
+        page_sizes: '12, 24, 36, 48'
+        sort_options: null
+        default_sort: null
+        filters: null
+    fallback_metadata:
+      slot_definitions: null
+label: 'ECA Guide Library'
+id: block.project_browser_block.eca_guide_library
+provider: project_browser
+source: block
+source_local_id: 'project_browser_block:eca_guide_library'

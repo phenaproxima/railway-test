@@ -1,0 +1,86 @@
+uuid: 99d08b33-edaa-41d4-bbf3-39310f39b305
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.block.system_breadcrumb_block
+    - canvas.component.sdc.haven_theme.button
+    - canvas.component.sdc.haven_theme.heading
+    - canvas.component.sdc.haven_theme.section
+    - canvas.component.sdc.haven_theme.text
+    - core.entity_view_mode.node.full
+    - field.field.node.page.field_content
+    - filter.format.content_format
+    - node.type.page
+  module:
+    - node
+    - options
+id: node.page.full
+content_entity_type_id: node
+content_entity_type_bundle: page
+content_entity_type_view_mode: full
+component_tree:
+  '0:92e68054-9f78-4420-8752-96ec693d2fa9':
+    uuid: 92e68054-9f78-4420-8752-96ec693d2fa9
+    component_id: block.system_breadcrumb_block
+    component_version: 0d7e961dd03aa710
+    inputs:
+      label: Breadcrumbs
+      label_display: '0'
+  '1:b436211b-95ef-40ea-987a-e7b0f5782e33':
+    uuid: b436211b-95ef-40ea-987a-e7b0f5782e33
+    component_id: sdc.haven_theme.section
+    component_version: c6eea4f08b0e0778
+    inputs:
+      width: 70%
+      columns: '1 column'
+      mobile_columns: 1
+      margin_block_start: '48'
+      margin_block_end: '48'
+      padding_block_start: '0'
+      padding_block_end: '0'
+      section_header: true
+      section_footer: true
+  '1:footer_slot:0:acfaa742-789a-427c-a01d-cbff52b6a022':
+    parent_uuid: b436211b-95ef-40ea-987a-e7b0f5782e33
+    slot: footer_slot
+    uuid: acfaa742-789a-427c-a01d-cbff52b6a022
+    component_id: sdc.haven_theme.button
+    component_version: 0e9e84d691ccddc4
+    inputs:
+      variant: primary
+      outlined: false
+      label: 'Button label'
+      size: medium
+      icon: arrow-right
+      icon_first: false
+      disabled: false
+  '1:header_slot:0:f08be9dc-e328-4cb7-9499-df6db9bd8900':
+    parent_uuid: b436211b-95ef-40ea-987a-e7b0f5782e33
+    slot: header_slot
+    uuid: f08be9dc-e328-4cb7-9499-df6db9bd8900
+    component_id: sdc.haven_theme.heading
+    component_version: f463a8803de8d3f1
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:page␝title␞␟value'
+      level: 1
+      text_size: default
+      text_color: default
+      align: left
+  '1:main_slot:0:caa1e4b2-d58b-4140-b99b-ab3e1ce55ad5':
+    parent_uuid: b436211b-95ef-40ea-987a-e7b0f5782e33
+    slot: main_slot
+    uuid: caa1e4b2-d58b-4140-b99b-ab3e1ce55ad5
+    component_id: sdc.haven_theme.text
+    component_version: 75c8d6e04ca4b729
+    inputs:
+      text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:page␝field_content␞␟processed'
+      text_size: normal
+      text_color: default
+      columns: '1 column'
+exposed_slots: {  }
+page_variant: null

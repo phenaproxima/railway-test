@@ -1,0 +1,45 @@
+uuid: ada44b33-666e-4087-8e78-a43fb4686bd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.haven_theme.card
+    - core.entity_view_mode.node.card
+    - field.field.media.image.field_media_image
+    - field.field.node.blog.field_featured_image
+    - image.style.canvas_parametrized_width
+    - media.type.image
+    - node.type.blog
+  module:
+    - file
+    - media
+    - node
+    - options
+_core:
+  default_config_hash: '-vhAi_5pKHBpYM5aatP37QdsXX4w_VacY9liIo1wDOY'
+id: node.blog.card
+content_entity_type_id: node
+content_entity_type_bundle: blog
+content_entity_type_view_mode: card
+component_tree:
+  '0:986eb71c-e9f3-4aa9-b4e9-cbad39acca4d':
+    uuid: 986eb71c-e9f3-4aa9-b4e9-cbad39acca4d
+    component_id: sdc.haven_theme.card
+    component_version: 0c5fd99d8d37c291
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:blog␝title␞␟value'
+      level: 3
+      date:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node␝created␞␟value'
+        adapter: unix_to_date
+      url:
+        sourceType: host-entity-url
+        absolute: false
+      media:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:blog␝field_featured_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}'
+exposed_slots: {  }
+page_variant: null

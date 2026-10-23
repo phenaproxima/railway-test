@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 0772a65f-b6fe-4c8e-97b8-45fc9bb3037b
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: matt-palmer-K5KmnZHv1Pg-unsplash.avif
+  uri:
+    -
+      value: 'public://2026-03/matt-palmer-K5KmnZHv1Pg-unsplash.avif'
+  filemime:
+    -
+      value: image/avif
+  filesize:
+    -
+      value: 1215035
+  status:
+    -
+      value: true

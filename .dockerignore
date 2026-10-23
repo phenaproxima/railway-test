@@ -1,0 +1,8 @@
+.env
+*.md
+*.txt
+.ddev
+docker-compose.yml
+.git
+.gitignore
+.gitattributes

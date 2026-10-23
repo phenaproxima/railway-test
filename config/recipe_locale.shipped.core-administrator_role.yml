@@ -1,0 +1,6 @@
+recipe: 'Administrator role'
+config:
+  -
+    name: user.role.administrator
+    data:
+      label: Administrator

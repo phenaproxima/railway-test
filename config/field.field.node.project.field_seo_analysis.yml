@@ -1,0 +1,23 @@
+uuid: b2f2c588-7444-4c91-b1d8-fefb47f9d380
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_seo_analysis
+    - node.type.project
+  module:
+    - yoast_seo
+_core:
+  default_config_hash: at4IYAq2WnstNpLPhQK4XpoIm845K8U04jeaECzpx24
+id: node.project.field_seo_analysis
+field_name: field_seo_analysis
+entity_type: node
+bundle: project
+label: 'SEO analysis'
+description: 'Pick the main keyword this page is about.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

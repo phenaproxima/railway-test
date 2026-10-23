@@ -1,0 +1,12 @@
+uuid: 931cf63c-87fe-4b29-9ed1-3b13a5b408e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - canvas
+    - trash
+id: canvas_page_restore_action
+label: 'Restore page from trash'
+type: canvas_page
+plugin: 'entity:restore_action:canvas_page'
+configuration: {  }

@@ -1,0 +1,40 @@
+uuid: 3ac46473-7a45-455e-83d9-6401c06235c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - haven_theme
+_core:
+  default_config_hash: xEnaLP-NkXXx8YBd3mTHaAnAKSb-acW1PRVLBJFnjq8
+active_version: 3149f199d66bbc29
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        menu_align:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: center
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+    fallback_metadata:
+      slot_definitions:
+        logo:
+          title: 'Site logo'
+        navigation:
+          title: 'Navigation menu'
+        links:
+          title: CTAs
+label: Navbar
+id: sdc.haven_theme.navbar
+provider: haven_theme
+source: sdc
+source_local_id: 'haven_theme:navbar'

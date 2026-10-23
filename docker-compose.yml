@@ -1,0 +1,34 @@
+# Docker Compose file for running your Drupal CMS site.
+services:
+  web:
+    build: .
+    ports:
+      - 8080:8080
+    volumes:
+      - ./files:/opt/drupal/web/sites/default/files
+    environment:
+      DRUSH_OPTIONS_URI: "localhost:8080"
+    env_file:
+      - .env
+##
+## To use a production-ready database, uncomment and edit everything below.
+##
+#      DATABASE_URL: mysql://drupal:drupal@db/drupal
+#    depends_on:
+#      db:
+#        condition: service_healthy
+#  db:
+#    image: mysql:8
+#    environment:
+#      MYSQL_DATABASE: drupal
+#      MYSQL_USER: drupal
+#      MYSQL_PASSWORD: drupal
+#      MYSQL_ROOT_PASSWORD: root
+#    volumes:
+#      - db-data:/var/lib/mysql
+#    healthcheck:
+#      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+#      interval: 5s
+#      retries: 10
+#volumes:
+#  db-data:

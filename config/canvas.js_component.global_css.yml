@@ -1,0 +1,27 @@
+uuid: 2fd56d05-e3b6-4b19-b9f7-a6dc4c5891e5
+langcode: en
+status: false
+dependencies: {  }
+_core:
+  default_config_hash: 8XLmWNOVYP4HYfY7yQ7bsVzaWVXLzKvlao3y1ca53MA
+machineName: global_css
+name: 'Global CSS'
+required: {  }
+props: {  }
+slots: {  }
+js:
+  original: |
+    const GlobalCss = () => {
+      return (<div></div>);
+    };
+    export default GlobalCss;
+  compiled: |
+    import { jsx as _jsx } from "react/jsx-runtime";
+    const GlobalCss = ()=>{
+        return /*#__PURE__*/ _jsx("div", {});
+    };
+    export default GlobalCss;
+css:
+  original: ''
+  compiled: ''
+dataDependencies: {  }
