@@ -1,4 +1,4 @@
-FROM drupal:11-php8.4-apache
+FROM docker.io/library/drupal:11-php8.4-apache
 
 WORKDIR /opt/drupal
 
@@ -18,9 +18,9 @@ RUN a2enmod headers
 # any patch files. The archive always contains these directories (even if
 # empty), so these COPY instructions are safe.
 COPY composer.* patches.* ./
-COPY patches/ ./
-COPY config/ ./
-COPY content/ ./
+COPY config/ ./config/
+COPY content/ ./content/
+COPY patches/ ./patches/
 
 # Install the site's dependencies. Because we have a lock file, this
 # installs exactly what the lock file says, adding or removing packages
@@ -199,7 +199,7 @@ ENV DRUPAL_CONFIG_SYNC_DIRECTORY=../config
 EXPOSE 8080
 
 # Write the entry point and make it executable.
-RUN cat <<'EOF' > /usr/local/bin/entrypoint.sh
+RUN cat <<'EOF' > /usr/local/bin/start.sh
 #!/usr/bin/env bash
 # Commands:
 #
@@ -216,6 +216,10 @@ is_installed() {
 }
 
 case "${1:-}" in
+  check)
+    is_installed
+    ;;
+
   release)
     # Run database updates and import config. If Drupal isn't installed yet
     # (e.g., the very first deploy), skip gracefully. It will be installed
@@ -256,7 +260,7 @@ case "${1:-}" in
     ;;
 esac
 EOF
-RUN chmod +x /usr/local/bin/entrypoint.sh
+RUN chmod +x /usr/local/bin/start.sh
 
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["start.sh"]
 CMD ["apache2-foreground"]
