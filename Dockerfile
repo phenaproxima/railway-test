@@ -235,6 +235,9 @@ case "${1:-}" in
 
     # If Drupal isn't installed yet, install it and import content.
     if ! is_installed; then
+      # Ensure the proper database driver is enabled.
+      yaml-cli update:value config/core.extension.yml "module.$(drush status --field=db-driver)" 0 --type=integer
+
       drush site:install --existing-config --yes --db-url="$DATABASE_URL"
       drush content:import ../content --yes
 
