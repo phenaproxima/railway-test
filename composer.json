@@ -34,7 +34,7 @@
         "drupal/core-vendor-hardening": "^11.4",
         "drupal/cva": "^1.0.0",
         "drupal/dashboard": "^2.2",
-        "drupal/drupal_cms_helper": "2.x-dev@dev",
+        "drupal/drupal_cms_helper": "^2",
         "drupal/drupal_cms_installer": "^2",
         "drupal/drupical": "^1",
         "drupal/easy_breadcrumb": "^2.0.9",
